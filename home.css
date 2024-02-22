@@ -1,4 +1,10 @@
+@font-face {
+    font-family: ChakraPetch;
+    src: url(sitedeco/ChakraPetch-Regular.ttf);
+}
+
 body {
+    font-family: ChakraPetch;
     background-image: url('sitedeco/img/pexels-felix-mittermeier-1146134.jpg');
     height: 100vh;
     margin: 0;
@@ -10,23 +16,7 @@ nav.menu {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 80px;
-}
-
-nav.menu ul {
-    list-style-type: none; /* Remove bullet points from the list */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Make the <ul> element flex */
-}
-
-nav.menu li {
-    margin: 0 40px; /* Add margin between list items */
-}
-
-nav.menu a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
     color: white;
-    text-decoration: none;
+    height: 80px;
+    font-size: 40px;
 }

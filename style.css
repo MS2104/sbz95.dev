@@ -40,3 +40,30 @@ header {
 .text-container p {
     font-size: 15px;
 }
+
+ul, ol {
+    list-style-type: none;
+    padding-left: 0; /* optional: removes default left padding */
+}
+
+li {
+    /* optional: remove underlines for links inside list items */
+    text-decoration: none;
+}
+
+.icon-button {
+    background-color: transparent; /* Remove background color if needed */
+    border: none; /* Remove border if needed */
+    padding: 0; /* Remove padding if needed */
+    cursor: pointer; /* Set cursor to pointer for better UX */
+}
+
+.icon-button img {
+    width: 24px; /* Adjust width of the icon as needed */
+    height: 24px; /* Adjust height of the icon as needed */
+    /* You can add more styling to the image here */
+}
+
+.socialsmenu ul{
+    color: white;
+}
