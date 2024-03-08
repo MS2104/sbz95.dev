@@ -67,3 +67,9 @@ li {
 .socialsmenu ul{
     color: white;
 }
+
+p.note {
+    width: 60%; /* Adjust the percentage or any other appropriate width value */
+    margin: 0 auto; /* This centers the element horizontally */
+    text-align: left;
+}
