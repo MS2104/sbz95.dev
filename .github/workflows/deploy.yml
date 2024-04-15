@@ -21,6 +21,6 @@ jobs:
       
       - name: Deploy to server
         run: |
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" | ssh -i - sbzdev@${{ secrets.SERVER_IP }} 'mkdir -p domains/sbz95.dev/public_html && cat > /tmp/deploy.tar.gz && tar -xzvf /tmp/deploy.tar.gz -C domains/sbz95.dev/public_html && rm /tmp/deploy.tar.gz'
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | ssh sbzdev@${{ secrets.SERVER_IP }} 'mkdir -p domains/sbz95.dev/public_html && cat > /tmp/deploy.tar.gz && tar -xzvf /tmp/deploy.tar.gz -C domains/sbz95.dev/public_html && rm /tmp/deploy.tar.gz'
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
