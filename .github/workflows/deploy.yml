@@ -21,6 +21,8 @@ jobs:
       
       - name: Deploy to server
         run: |
-          rsync -avz --delete -e "ssh -i $SSH_PRIVATE_KEY_PATH" ${{ github.workspace }}/ sbzdev@${{ secrets.SERVER_IP }}:domains/sbz95.dev/public_html
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key.pem
+          chmod 600 private_key.pem
+          rsync -avz --delete -e "ssh -i private_key.pem" ${{ github.workspace }}/ sbzdev@${{ secrets.SERVER_IP }}:domains/sbz95.dev/public_html
         env:
-          SSH_PRIVATE_KEY_PATH: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
