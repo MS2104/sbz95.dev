@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'playfairdisplay';
+    src: url('media/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'xanhmono';
+    src: url('media/fonts/XanhMono-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'xanhmono', sans-serif;
+    color: white; /* Set default text color */
+}
+
+.project {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start (left) */
+    text-align: left; /* Align text to the left */
+    width: 80%;
+    margin: 30px;
+    text-align: left;
+}
+
+.project-preview img {
+    padding: 20px; /* Adjust padding value as needed */
+    width: 200px;
+    height: auto;
+}
+
+.about-the-project.text-container {
+    text-align: left;
+}
+
+.about-the-project.text-container h1 {
+    margin: auto;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container p {
+    font-size: 15px;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding-left: 0; /* Optional: removes default left padding */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Optional: Add some space above the navbar */
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make the navbar items flex */
+}
+
+.navbar li {
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    line-height: 30px; /* Set line height for better vertical alignment */
+}
+
+.socialsdropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.socialsdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.socialsdropdown:hover .socialsdropdown-content {
+    display: block;
+}
+
+.text-container {
+    align-self: center;
+}

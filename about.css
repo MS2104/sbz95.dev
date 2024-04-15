@@ -1,0 +1,168 @@
+/* Combined CSS */
+
+/* Font faces */
+@font-face {
+    font-family: 'playfairdisplay';
+    src: url('media/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'xanhmono';
+    src: url('media/fonts/XanhMono-Regular.ttf') format('truetype');
+}
+
+/* Common styles */
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'xanhmono', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.welcome {
+    width: 500px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.selfie-img {
+    width: 30%; /* Adjust this value to your desired size */
+    padding: 50px;
+}
+
+/* Styles from File 1 */
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 80%;
+    margin: 30px auto; /* Adjusted to center horizontally */
+}
+
+.project-preview img {
+    padding: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.website-mention img {
+    width: 50%;
+    height: 50%;
+}
+
+.about-the-project.text-container {
+    text-align: left;
+}
+
+.about-the-project.text-container h1 {
+    margin: auto;
+}
+
+.link-to-project {
+    color: gray;
+}
+
+/* Styles from File 2 */
+.about-me {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    width: 80%; /* Adjusted to center horizontally */
+    text-align: right;
+}
+
+.socials-title {
+    padding: 40px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    width: 50%; /* Adjust the width as needed */
+    margin: auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container p {
+    font-size: 15px;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.socialsdropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.socialsdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.socialsdropdown:hover .socialsdropdown-content {
+    display: block;
+}
+
+.text-container {
+    align-self: center;
+}
+
+hr.solid {
+    border-top: 3px solid #242424;
+    width: 75%;
+  }

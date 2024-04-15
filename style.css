@@ -1,21 +1,96 @@
+/* Combined CSS */
+
+/* Font faces */
+@font-face {
+    font-family: 'playfairdisplay';
+    src: url('media/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'xanhmono';
+    src: url('media/fonts/XanhMono-Regular.ttf') format('truetype');
+}
+
+/* Common styles */
 body {
-    background-color: black;
+    background-color: #000;
     margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+    padding: 20px;
+    font-family: 'xanhmono', sans-serif;
+    color: white;
 }
 
 .container {
     width: 80%;
     margin: auto;
-    color: white;
-    padding: 20px;
     text-align: center;
+}
+
+.welcome {
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.selfie-img {
+    width: 30%;
+}
+
+/* Styles from File 1 */
+.project {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.project-preview img {
+    padding: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.website-mention img {
+    width: 50%;
+    height: 50%;
+}
+
+.about-the-project.text-container {
+    text-align: left;
+}
+
+.about-the-project.text-container h1 {
+    margin: auto;
+}
+
+.link-to-project {
+    color: gray;
+}
+
+/* Styles from File 2 */
+.about-me {
+    display: flex;
     justify-content: center;
-    min-height: 100vh;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.socials-title {
+    padding: 40px;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
 }
 
 header {
@@ -28,48 +103,148 @@ header {
     align-items: center;
 }
 
-.image-container {
-    margin-bottom: 20px;
-}
-
-.image-container img {
-    width: 200px;
-    height: auto;
-}
-
 .text-container p {
     font-size: 15px;
 }
 
 ul, ol {
     list-style-type: none;
-    padding-left: 0; /* optional: removes default left padding */
+    padding-left: 0;
 }
 
-li {
-    /* optional: remove underlines for links inside list items */
-    text-decoration: none;
+.socialsdropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.icon-button {
-    background-color: transparent; /* Remove background color if needed */
-    border: none; /* Remove border if needed */
-    padding: 0; /* Remove padding if needed */
-    cursor: pointer; /* Set cursor to pointer for better UX */
+.socialsdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.icon-button img {
-    width: 24px; /* Adjust width of the icon as needed */
-    height: 24px; /* Adjust height of the icon as needed */
-    /* You can add more styling to the image here */
+.socialsdropdown:hover .socialsdropdown-content {
+    display: block;
 }
 
-.socialsmenu ul{
+.text-container {
+    align-self: center;
+}
+
+hr.solid {
+    border-top: 3px solid #242424;
+    width: 75%;
+}
+
+/* Blog */
+/* Combined CSS */
+
+/* Common styles */
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.projects {
+    width: calc(25% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.project-preview img,
+.website-mention img,
+.blog_img img {
+    width: auto;
+    height: 150px;
+}
+
+.card {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+/* Navbar styles */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
     color: white;
+    text-decoration: none;
+    line-height: 30px;
 }
 
-p.note {
-    width: 60%; /* Adjust the percentage or any other appropriate width value */
-    margin: 0 auto; /* This centers the element horizontally */
-    text-align: left;
+.socialsdropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.socialsdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.socialsdropdown:hover .socialsdropdown-content {
+    display: block;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.note {
+    font-size: 11px;
+    color: gray;
 }
