@@ -1,0 +1,18 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name as needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Deploy to server
+        run: |
+          ssh-keyscan -t rsa 45.131.60.10 >> ~/.ssh/known_hosts
+          rsync -avz --delete -e "ssh -i ${{ secrets.SSH_PRIVATE_KEY }}" ${{ github.workspace }}/ sbzdev@45.131.60.10:domains/sbz95.dev/public_html
