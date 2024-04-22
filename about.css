@@ -131,7 +131,7 @@ ul, ol {
 }
 
 .navbar li {
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 .navbar a {
@@ -140,29 +140,35 @@ ul, ol {
     line-height: 30px;
 }
 
-.socialsdropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.socialsdropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.socialsdropdown:hover .socialsdropdown-content {
-    display: block;
+.experience {
+    padding-left: 100px;
+    padding-right: 100px ;
 }
 
 .text-container {
     align-self: center;
 }
 
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
+
+
 hr.solid {
     border-top: 3px solid #242424;
     width: 75%;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome {
+        width: 700px;
+        font-size: 11px;
+        text-align: center;
+        padding-left: 10px;
+    }
+}

@@ -1,5 +1,3 @@
-/* Combined CSS */
-
 /* Font faces */
 @font-face {
     font-family: 'playfairdisplay';
@@ -18,6 +16,7 @@ body {
     padding: 20px;
     font-family: 'xanhmono', sans-serif;
     color: white;
+    overflow-x: hidden;
 }
 
 .container {
@@ -89,8 +88,24 @@ body {
 .title {
     text-align: center;
     font-size: 30px;
-    width: 50%;
-    margin: auto;
+    width: 60%;
+    margin: 30px auto 0; /* Adjust the top margin */
+}
+
+.title img{
+    width: 300px;
+}
+
+.title h1 {
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.tinymsg {
+    color: gray;
 }
 
 header {
@@ -142,33 +157,27 @@ hr.solid {
 /* Blog */
 /* Combined CSS */
 
-/* Common styles */
-body {
-    overflow-x: hidden;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
 .projects {
-    width: calc(25% - 20px);
-    margin: 10px;
     box-sizing: border-box;
+    margin: 10px;
+}
+
+.project {
+    width: calc(33.33% - 20px); /* Display 3 projects in a row */
 }
 
 .project-preview img,
 .website-mention img,
 .blog_img img {
-    width: auto;
-    height: 150px;
+    max-width: 300px;
+    height: auto;
+    display: block; /* Ensure the images don't have any unwanted gaps */
 }
 
 .card {
     padding: 20px;
     margin-top: 20px;
+    max-width: 300px;
 }
 
 .row {
@@ -181,12 +190,6 @@ body {
     content: "";
     clear: both;
     display: table;
-}
-
-.header {
-    text-align: center;
-    font-size: 40px;
-    padding: 10px;
 }
 
 /* Navbar styles */
@@ -208,7 +211,7 @@ body {
 }
 
 .navbar li {
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 .navbar a {
@@ -217,24 +220,7 @@ body {
     line-height: 30px;
 }
 
-.socialsdropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.socialsdropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.socialsdropdown:hover .socialsdropdown-content {
-    display: block;
-}
-
+/* Footer styles */
 .footer {
     padding: 20px;
     text-align: center;
@@ -247,4 +233,21 @@ body {
 .note {
     font-size: 11px;
     color: gray;
+}
+
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .project {
+        width: calc(50% - 20px); /* Display 2 projects in a row for smaller screens */
+    }
 }
