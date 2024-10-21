@@ -1,0 +1,13 @@
+# Basic Settings
+title: My Jekyll Site
+description: A simple blog with no dates in the URLs
+
+# Permalink Structure (removing date from URL)
+permalink: /:title/
+
+# Enable future posts
+future: true
+
+collections:
+  myposts:
+    output: true

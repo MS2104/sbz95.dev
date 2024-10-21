@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense</title>
+    <link rel="stylesheet" href="/assets/blogpost.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">PROJECTS</a></li>
+            <li><a href="../blog.html">BLOG</a></li>
+            <li>MS</li>
+            <li><a href="../about.html">ABOUT</a></li>
+            <li><a href="https://linktr.ee/miladsahar">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="back_button"></div>
+        <a href="#" onclick="window.history.back(); return false;">⏪ Back</a>
+    </div>
+    
+    <div class="content">
+        <h1 id="tower-defense-minigame">Tower Defense minigame</h1>
+
+        <p>For the first project of this year, we had to make a 2D tower defense game. The goal of this assignment was more or less to test our core developement skills rather than our game design skills. Unlike the rest of the projects where we were graded on the final result, we got graded based on whether our skills were up to professional standards. With that being said, let’s take a look at how I made my own.</p>
+
+        <p>Here’s what the game looks like:</p>
+
+        <div class="video-container">
+            <video width="640" height="360" controls="">
+                <source src="/assets/img/towerdefense/Unity_06imSLAoog.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <h2 id="challenges-faced">Challenges faced</h2>
+
+        <p>The two things I struggled with the hardest while making this project were the towers and enemy pathfinding. Because enemies are supposed to move in a specific path in TowerDefense games I couldn’t just make use of Unity’s navigation AI. I actually had to hardcode their movement. It ended up being quite simple to do however. The way enemies move in my game is by searching for preplaced checkpoints in the level, sorting them and putting them in a list and then moving towards the next position stored on said list. After it reaches the end, it collides with a hidden cube and then registers damage so you can actually die. Next up were towers. The way I made towers function is by attaching a collider and if an enemy came in contact with said collider the tower would have to start looking at the enemy and start shooting at it. Lastly, the ability for players to purchase and place down towers. I tackled this problem with the help of a grid system. You purchase a tower and then you see a transparent tower appear under your cursor which you can place down anywhere. When you click, the tower is placed down and is ready to shoot at the enemy.</p>
+
+        <h2 id="lessons-learned">Lessons learned</h2>
+
+        <p>The most important thing that I learned from this project was effectively applying two principles, SRP &amp; DRY. These stand for Single Responsibility Principle and Don’t Repeat Yourself. The names speak for themselves. SRP is the principle of everything having a singular responsibility. The reason these were so important in this project is because these principles reward simplicity. If you apply these principles across your project, your code is actually more readable, more easy to understand for others and easily modifiable without messing up anything. DRY is the principle of not repeating yourself. I mean the name already made it obvious. But it’s especially important because repeating yourself alot leads to spaghetti code which results in code that is harder to maintain and just painful to look at in general. By not repeating yourself, you save yourself a lot of time and make your code more efficient and reusable like I mentioned before. Take a look image below.</p>
+
+        <p><img src="/assets/img/towerdefense/Unity_HBiUHbYQof.png" alt="Image" /></p>
+
+        <p>Because I created adjustable stats, I can create copies of my tower everytime I want to add a new type instead of having to reprogram the entire thing for every type of tower I want to make. Same goes for the enemy!</p>
+
+        <p><img src="/assets/img/towerdefense/Unity_6Li5hNUqQW.png" alt="Image" /></p>
+
+        <p>I can make slower enemies, enemies that hurt more or even a golden enemy that gives more money on kill! The point is that by doing this you speed up the developement process because you can reuse previous work instead of having to rewrite everything from the ground up.</p>
+
+        <h2 id="conclusion">Conclusion</h2>
+
+        <p>I’m proud of the end result and I’m happy I learned something from it. I’m especially happy that I learned about the SRP and DRY principles because it did infact speed up the developement process quite a bit in comparison to last project.</p>
+
+        <p>If you’re interested to learn more about the project, check out the GitHub repository <a href="https://github.com/MS2104/TowerDefenseV2">here</a>!</p>
+
+        <h1>Thanks for reading!</h1>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'DMSans'; /* Custom name for the font */
+    src: url('../assets/font/DMSans-VariableFont_opsz\,wght.ttf') format('truetype'); /* Path to the .ttf file */
+  }
+  
+body {
+  background-image: url(/assets/img/19852128_6194995.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image covers the whole page */
+  background-attachment: fixed; /* Makes the image stay in place during scrolling */
+  background-position: center; /* Centers the image on the page */
+  font-family: 'DMSans', sans-serif;
+  color: white;
+}
+
+
+.content {
+  max-width: 1200px; /* Limit the overall width of the content */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Add some padding on the sides */
+}
+
+.name {
+  
+  font-size: 180px;
+  text-align: center;
+  place-items: center;
+  transform: translateY(-20%);
+  color: white;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-top: 10px; /* Adds some space between the name and the title */
+  text-align: center;
+  transform: translateY(-200%);
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-family: 'Blackletter', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 10px 10px 10px #2D2D2D inset;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: rgba(100, 100, 100, 0.5);
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.navbar li {
+  margin: 0 50px;
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #00bfff;
+}
+
+h1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  max-width: 800px; /* Set max-width for paragraphs */
+  margin: 0 auto; /* Center-align the text */
+  line-height: 1.6; /* Improve readability */
+}
+
+.video-container {
+  display: grid;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.gameplay-example {
+  padding: 20px;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-left {
+  margin-right: 20px;
+  max-width: 300px;
+  height: auto;
+}
+
+.text-right {
+  flex: 1;
+  line-height: 1.4;
+  margin: 30px;
+  padding: 0;
+}
+
+.syringeyapping {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 890px; /* Reduced from 1200px for better centering */
+  padding: 0 20px;
+  gap: 20px; /* Adds space between text and image */
+}
+
+.text-left {
+  flex: 1;
+  max-width: 60%;
+}
+
+.image-container {
+  flex: 0 0 auto;
+  max-width: 300px;
+  align-self: center; /* Centers the image vertically */
+}
+
+img {
+  padding: 30px;
+}
+
+.changes-list {
+  list-style-type: disc;  /* or 'circle', 'square', etc. */
+  padding-left: 20px;  /* Adds some indentation */
+}
+
+.changes-list li {
+  margin-bottom: 10px;  /* Adds space between list items */
+}

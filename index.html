@@ -3,114 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Milad Sahar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar-container">
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About me</li>
-                <li><a href="socials.html">Socials</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="title">
-        <h1>
-            sbz<sup>95</sup>
-            <h2 class="subtitle">
-                Game Developer
-            </h2>
-        </h1>
-    </div>
-    <br>
-    <div class="about-me">
-        <div class="about-me">
-            <div class="welcome">
-                Welcome to my website. I am Star or Starbladez.
-                I am a 19 year old living in the Netherlands. I'm currently
-                in my second year of college learning game developement.
-                I specialize in C# and work with Unity and Unreal Engine.
-                <br>
-                <br>
-                Below you can find some of my work!
+    
+    <nav class="navbar">
+        <ul>
+            <li><a id="projects-link" href="index.html/#projects-section">PROJECTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li>MS</li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="https://linktr.ee/miladsahar">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="page-content">
+      <div class="name-container">
+          <div class="name">
+              MILAD SAHAR
+          </div>
+          <h3 id="game-developer" class="title">Unity Game Developer</h3>
+          <a href="#projects-section" id="view-projects-btn" class="button">View Projects</a>
+      </div>
+  </div>
+    
+
+    <div id="projects-section" class="page-content">
+        <h1 class="pagetitle">Projects</h1>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="assets/img/trglogo_new.png" alt="Project Image" class="project-image">
+            <div class="project-details">
+              <h3 class="project-title">The Rift Guardian</h3>
+              <p class="project-description">VR game project, first time working with Unreal Engine & VR</p>
+              <a href="project/theriftguardian.html" class="project-link">View Project</a>
             </div>
-        </div>
-    </div>
-    <div class="title">
-        <h2>My work</h2>
-    </div>
-    <div class="row">
-        <div class="projects">
-            <div class="card">
-                <h2>Unnamed VR shooter</h2>
-                <h5>Releasing Q4 2024</h5>
-                <div class="blog_img"> <!-- Remove height style -->
-                    <img src="media\img\project_img\UnrealEditor_v108xOCZRC.png">
-                </div>
-                <p>Team project, my first time working with Unreal Engine!</p>
-                <br>
-                Article in the works.
+          </div>
+          
+          <div class="project-card">
+            <img src="assets/img/ultrakill/ultrakill_logo.png" alt="Project Image" class="project-image">
+            <div class="project-details">
+              <h3 class="project-title">Vertical Slice</h3>
+              <p class="project-description">Recreation of the game Ultrakill, part of a Vertical Slice project</p>
+              <a href="project/ultrakillremake.html" class="project-link">View Project</a>
             </div>
-        </div>
-        <div class="projects">
-            <div class="card">
-                <h2>ULTRAKILL remake</h2>
-                <h5>Made in 2024, unreleased</h5>
-                <div class="blog_img"> <!-- Remove height style -->
-                    <a href="projects/ukremake.html">
-                        <img src="media\img\project_img\logo.png">
-                    </a>
-                </div>
-                <p>Team project, recreation of ULTRAKILL that I contributed to!</p>
-                <br>
-                <a href="projects/ukremake.html">Read more</a>
-            </div>
-        </div>
-        <div class="projects">
-            <div class="card">
-                <h2>Tower Defense Minigame</h2>
-                <h5>Made in 2023, unreleased</h5>
-                <div class="blog_img"> <!-- Remove height style -->
-                    <a href="projects/towerdefense.html">
-                        <img src="media/img/project_img/Tower Defense/tdlogo.png">
-                    </a>
-                </div>
-                <p>Solo project, more of a learning experience rather than a full game</p>
-                <br>
-                <a href="projects/towerdefense.html">Read more</a>
-            </div>
-        </div>
+          </div>
         
-        <div class="projects">
-            <div class="card">
-                <h2>Shootout Showdown</h2>
-                <h5>Releasing in Q3 2024</h5>
-                <div class="blog_img"> <!-- Remove height style -->
-                    <a href="projects/shootoutshowdown.html">
-                        <img src="media/img/project_img/Shootout Showdown/sslogo.png">
-                    </a>
-                </div>
-                <p>Mini arcade game, solo project</p>
-                <br>
-                <a href="projects/shootoutshowdown.html">Read more</a>
+          <div class="project-card">
+            <img src="assets/img/retro-controller.png" alt="Project Image" class="project-image">
+            <div class="project-details">
+              <h3 class="project-title">Untitled Tower Defense Game</h3>
+              <p class="project-description">Tiny tower defense game, made to experiment with mechanics</p>
+              <a href="project/tower-defense.html" class="project-link">View Project</a>
             </div>
-        </div>
-        <div class="projects">
-            <div class="card">
-                <h2>This website!</h2>
-                <h5>Released in 2024, active </h5>
-                <div class="blog_img"> <!-- Remove height style -->
-                    <img src="media\img\wireframe-globe.256x256.png" style="width: auto; height: 150px;">
-                </div>
-                <p>You're looking at it right now!</p>
-                <a href="https://github.com/MS2104/sbz95.dev">View the source code on GitHub</a>
-                <a href="https://forms.gle/eombp4JSGTTtHgjw6">Feedback form</a></p>
+          </div>
+          
+          <div class="project-card">
+            <img src="assets/img/sslogo.png" alt="Project Image" class="project-image">
+            <div class="project-details">
+              <h3 class="project-title">Shootout Showdown</h3>
+              <p class="project-description">Short arcade game.</p>
+              <a href="project/tower-defense.html" class="project-link">View Project</a>
             </div>
-        </div>        
-        <!-- Repeat the leftcolumn content for each row -->
-    </div>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/img/house.png" alt="Project Image" class="project-image">
+            <div class="project-details">
+              <h3 class="project-title">This website</h3>
+              <p class="project-description">Live project, actively maintained  </p>
+              <a href="https://github.com/MS2104/sbz95.dev" class="project-link">View Project</a>
+            </div>
+          </div>
+      </div>
+      <br>
+      <div style="height: 50px;"></div>
+      <h3>Want me to help you realize your next project? <a href="https://www.youtube.com/watch?v=ZnJR7BF-Ask">Contact me.</a></h3>
+      <script src="smooth-scroll.js"></script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rift Guardian</title>
+    <link rel="stylesheet" href="/assets/blogpost.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">PROJECTS</a></li>
+            <li><a href="../blog.html">BLOG</a></li>
+            <li>MS</li>
+            <li><a href="../about.html">ABOUT</a></li>
+            <li><a href="https://linktr.ee/miladsahar">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <p><img src="/assets/img/trglogo_new.png"</p>
+        <h1 id="the-rift-guardian">The Rift Guardian</h1>
+        <p>The Rift Guardian is a wave-based survival shooter VR game with a space theme, where you are dropped off in the middle of nowhere in outer space tasked to survive as long as possible against large hordes of aliens and robots out for your blood. You can use a wide range of power-ups and weapons to give yourself the upper hand in battle. Use machine guns, bombs, or shields to protect yourself. Can you make it out alive?</p>
+
+        <h1 id="view-the-trailer-below">View the trailer below:</h1>
+
+        <p>
+            <div class="gameplay-example">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JawSwseYzAM?si=N-8kv_xkuMC7E0wT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </p>
+
+        <h1 id="a-little-about-the-project">A little about the project:</h1>
+        <p>This project was meant to be THE assignment of the semester where we had a 6 month timeframe to learn how Unreal Engine works and develop a VR game inside of it. We had to do so within an agile environment and this time in an actual office space so that we truly got to feel what it’s like developing a project like a regular studio would do and as an actual dev team with an actual name in a real office environment hosted by a company called XR Lab. The team’s name is Devil’s Luck and this is the only game we made under this name.</p>
+
+        <h1 id="my-role-within-the-project">My role within the project</h1>
+
+        <div class="syringeyapping">
+            <div class="text-left">
+              <p>I was tasked to make a healing item and a flashlight that stuns enemies. The healing item was the most difficult out of the two because the healing item had to represent a syringe both aesthetically and mechanically. The player would have to stab themselves with the syringe to heal up so I had to figure out a way to check collisions and then apply the heal (for which the system has already been setup thanks to my wonderful colleague Gino).</p>
+            </div>
+            
+            <div class="image-container">
+              <img src="/assets/img/theriftguardian/UnrealEditor_UpEKURoSTa.png" alt="Image of a syringe" />
+              <p>Image of the syringe in the editor</p>
+            </div>
+          </div>
+
+        <p><br></p>
+        <p><br></p>
+        <p>Next up we’ve got the memory eraser which is inspired by the Neuralyzer from the Men In Black movies. The way that it works is you charge it by holding down either triggers and then releasing to activate a flash that would stun all the enemies that stared at it. It worked by setting the custom time dilation of the enemy component (basically how fast time passes for that component) to 0 so the enemy completely halts any and all movement and processing essentially freezing it in place.</p>
+        <p><br></p>
+        <p><img src="/assets/img/theriftguardian/Untitled.jpg" alt="Screenshot of the blueprint in action" /></p>
+        <p><br></p>
+        <p>Unfortunately I wasn’t able to get any footage of the flash in action due to the repository containing all the stuff I need being private and I unfortunately no longer have access to it because Devil’s Luck is no longer operational within XR Lab’s office space.</p>
+
+        <h1 id="the-struggles">The struggles</h1>
+        <p>The only thing that I really struggled with during the development of this project was the fact that this was a completely new engine that I was tasked to pick up and develop a feature within. I have however worked with Unreal Engine for Fortnite so I was able to navigate myself within the engine, I just wasn’t familiar with the concept of Blueprints nor did I have any knowledge about C++. I also haven’t ever worked with VR beforehand so after this I can say I’m at least familiar with the technical side of VR.</p>
+
+        <p>Aside from being completely unfamiliar with how Unreal Engine works I’ve truly had no bigger struggle so far than I’ve had with input. This is because the way that input is registered within Unreal Engine is with Input Mapping Contexts.</p>
+
+        <p>An Input Mapping Context is essentially a component that you assign inputs to (basically input mappings for either keyboards, mice or controllers.) so that the game actually recognizes and takes input from said buttons. Without this, if you were to assign an action to a button without this it just wouldn’t work because by default Unreal Engine doesn’t know what to do when you press a button. Any other engine recognizes a button press by default and all you really have to do is listen to it. In Unreal Engine you have to go out of your way to define said buttons so that they can then be listened to.</p>
+        <p><img src="/assets/img/theriftguardian/4301d66259b6ad5a1d703ea8314f04f46a831c8f.png" alt="Screenshot of the Input Mapping Context" width="200"/></p>
+
+        <h1 id="what-did-i-learn-from-all-of-this">What did I learn from all of this?</h1>
+
+        <p>This project was more of a learning experience rather than a project with a fully polished product as the end goal because it was our first time using Unreal Engine and none of us had ever touched the engine and haven’t had any experience with it beforehand. I did however pick up alot during these 6 months. I’ve learned alot about the ins and outs of Unreal Engine and I’ve also familiarized myself with VR a little so I could potentially provide support for VR in my future projects.</p>
+
+        <h1 id="conclusion--final-result">Conclusion &amp; final result</h1>
+
+        <p>I’ve had a lot of fun contributing to this project and I’ve learned a lot. I will definitely consider making a full game within the engine once I take the time to learn C++ as well so I can truly get the most bang for my buck when it comes to making a full game. It was definitely a huge learning experience and a lot of the things I picked up during this 6 month timeframe I’ll definitely adapt into future projects.</p>
+
+        <p>I’m really sorry that this article is so lackluster in footage, I do have a recording of an internal testing session that I’m willing to provide upon request if you want to see more. Just shoot me an e-mail at hi@sbz95.dev!</p>
+
+        <p>Thanks for reading!</p>
+
+    </div>
+</body>
+</html>

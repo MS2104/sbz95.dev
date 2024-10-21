@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'DMSans'; /* Custom name for the font */
+    src: url('../assets/font/DMSans-VariableFont_opsz\,wght.ttf') format('truetype'); /* Path to the .ttf file */
+  }
+  
+body {
+  background-image: url(/assets/img/19852128_6194995.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'DMSans', sans-serif;
+  color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 10px 10px #2D2D2D inset;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: rgba(100, 100, 100, 0.5);
+    max-width: 800px;
+    margin: 30px auto;
+}
+  
+.navbar li {
+    margin: 0 50px;
+    list-style: none;
+}
+  
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+.navbar li a:hover {
+    color: #00bfff;
+}
+
+.logo {
+  font-size: 30px;
+  font-family: 'Blackletter', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px
+}
+
+p {
+  padding-left: 25%;
+  padding-right: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.devex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.expshowcase, .devabout {
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+.devabout p {
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-left {
+    margin-right: 20px;
+    max-width: 300px;
+    height: auto;
+}
+
+.text-right {
+    flex: 1;
+    line-height: 1.4;
+    margin: 30px;
+    padding: 0;
+}
+
+.cv-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cv-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-link a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
