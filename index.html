@@ -3,84 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milad Sahar</title>
+    <title>Milad Sahar | Game Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <nav class="navbar">
-        <ul>
-            <li><a id="projects-link" href="index.html/#projects-section">PROJECTS</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li>MS</li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="https://linktr.ee/miladsahar">CONTACT</a></li>
-        </ul>
-    </nav>
+    <div class="landing-container">
+        <!-- Grid corners -->
+        <div class="grid-corner top-left"></div>
+        <div class="grid-corner top-right"></div>
+        <div class="grid-corner bottom-left"></div>
+        <div class="grid-corner bottom-right"></div>
 
-    <div id="home" class="page-content">
-      <div class="name-container">
-          <div class="name">
-              MILAD SAHAR
-          </div>
-          <h3 id="game-developer" class="title">Unity Game Developer</h3>
-          <a href="#projects-section" id="view-projects-btn" class="button">View Projects</a>
-      </div>
-  </div>
-    
+        <!-- Navigation -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><span class="nav-link">MS</span></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-    <div id="projects-section" class="page-content">
-        <h1 class="pagetitle">Projects</h1>
+        <!-- Main content grid -->
+        <div class="content-grid">
+            <div class="title-block">
+                <div class="geometric-accent accent-1"></div>
+                <h1 class="name">Milad Sahar</h1>
+                <h2 class="title">Unity Game Developer</h2>
+                <div class="geometric-accent accent-2"></div>
+            </div>
+        </div>
 
-        <div class="projects-container">
-          <div class="project-card">
-            <img src="assets/img/trglogo_new.png" alt="Project Image" class="project-image">
-            <div class="project-details">
-              <h3 class="project-title">The Rift Guardian</h3>
-              <p class="project-description">VR game project, first time working with Unreal Engine & VR</p>
-              <a href="project/theriftguardian.html" class="project-link">View Project</a>
-            </div>
-          </div>
-          
-          <div class="project-card">
-            <img src="assets/img/ultrakill/ultrakill_logo.png" alt="Project Image" class="project-image">
-            <div class="project-details">
-              <h3 class="project-title">Vertical Slice</h3>
-              <p class="project-description">Recreation of the game Ultrakill, part of a Vertical Slice project</p>
-              <a href="project/ultrakillremake.html" class="project-link">View Project</a>
-            </div>
-          </div>
-        
-          <div class="project-card">
-            <img src="assets/img/retro-controller.png" alt="Project Image" class="project-image">
-            <div class="project-details">
-              <h3 class="project-title">Untitled Tower Defense Game</h3>
-              <p class="project-description">Tiny tower defense game, made to experiment with mechanics</p>
-              <a href="project/tower-defense.html" class="project-link">View Project</a>
-            </div>
-          </div>
-          
-          <div class="project-card">
-            <img src="assets/img/sslogo.png" alt="Project Image" class="project-image">
-            <div class="project-details">
-              <h3 class="project-title">Shootout Showdown</h3>
-              <p class="project-description">Short arcade game.</p>
-              <a href="project/tower-defense.html" class="project-link">View Project</a>
-            </div>
-          </div>
+        <!-- Decorative elements -->
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
 
-          <div class="project-card">
-            <img src="assets/img/house.png" alt="Project Image" class="project-image">
-            <div class="project-details">
-              <h3 class="project-title">This website</h3>
-              <p class="project-description">Live project, actively maintained  </p>
-              <a href="https://github.com/MS2104/sbz95.dev" class="project-link">View Project</a>
+        <!-- Technical readouts -->
+        <div class="technical-readout readout-1">
+            SYS.ID: MS_001<br>
+            STATUS: ONLINE<br>
+            LOCATION: GRID_7.9
+        </div>
+        <div class="technical-readout readout-2">
+            SCAN_COMPLETE<br>
+            ACCESS_GRANTED<br>
+            INIT_SEQUENCE
+        </div>
+
+        <!-- Grid background -->
+        <div class="grid-overlay"></div>
+    </div>
+
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <div class="header-line"></div>
+            <h2 class="section-title">Projects</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- The Rift Guardian -->
+            <div class="project-card">
+                <div class="project-border top"></div>
+                <div class="project-border right"></div>
+                <div class="project-border bottom"></div>
+                <div class="project-border left"></div>
+
+                <div class="project-image-container">
+                    <img src="assets/img/TheRiftGuardianLogo.png" alt="The Rift Guardian" class="project-image">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-id">PRJ_001</span>
+                        <span class="project-status">COMPLETED</span>
+                    </div>
+                    <h3 class="project-title">The Rift Guardian</h3>
+                    <p class="project-description">VR game project, first time working with Unreal Engine & VR</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unreal Engine</span>
+                        <span class="tech-tag">VR</span>
+                    </div>
+                    <a href="project/theriftguardian.html" class="project-link">
+                        VIEW_PROJECT
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
             </div>
-          </div>
-      </div>
-      <br>
-      <div style="height: 50px;"></div>
-      <h3>Want me to help you realize your next project? <a href="https://www.youtube.com/watch?v=ZnJR7BF-Ask">Contact me.</a></h3>
-      <script src="smooth-scroll.js"></script>
+
+            <!-- Vertical Slice -->
+            <div class="project-card">
+                <div class="project-border top"></div>
+                <div class="project-border right"></div>
+                <div class="project-border bottom"></div>
+                <div class="project-border left"></div>
+
+                <div class="project-image-container">
+                    <img src="assets/img/ultrakill_logo.png" alt="Vertical Slice" class="project-image">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-id">PRJ_002</span>
+                        <span class="project-status">COMPLETED</span>
+                    </div>
+                    <h3 class="project-title">Vertical Slice</h3>
+                    <p class="project-description">Recreation of the game Ultrakill, part of a Vertical Slice project</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                    </div>
+                    <a href="project/ultrakillremake.html" class="project-link">
+                        VIEW_PROJECT
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Untitled Tower Defense Game -->
+            <div class="project-card">
+                <div class="project-border top"></div>
+                <div class="project-border right"></div>
+                <div class="project-border bottom"></div>
+                <div class="project-border left"></div>
+
+                <div class="project-image-container">
+                    <img src="assets/img/retro-controller.png" alt="Untitled Tower Defense Game" class="project-image">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-id">PRJ_003</span>
+                        <span class="project-status">COMPLETED</span>
+                    </div>
+                    <h3 class="project-title">Untitled Tower Defense Game</h3>
+                    <p class="project-description">Tiny tower defense game, made to experiment with mechanics</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">Tower Defense</span>
+                    </div>
+                    <a href="project/tower-defense.html" class="project-link">
+                        VIEW_PROJECT
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Shootout Showdown -->
+            <div class="project-card">
+                <div class="project-border top"></div>
+                <div class="project-border right"></div>
+                <div class="project-border bottom"></div>
+                <div class="project-border left"></div>
+
+                <div class="project-image-container">
+                    <img src="assets/img/sslogo.png" alt="Shootout Showdown" class="project-image">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-id">PRJ_004</span>
+                        <span class="project-status">COMPLETED</span>
+                    </div>
+                    <h3 class="project-title">Shootout Showdown</h3>
+                    <p class="project-description">Short arcade game.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">Arcade</span>
+                    </div>
+                    <a href="project/tower-defense.html" class="project-link">
+                        VIEW_PROJECT
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- This Website -->
+            <div class="project-card">
+                <div class="project-border top"></div>
+                <div class="project-border right"></div>
+                <div class="project-border bottom"></div>
+                <div class="project-border left"></div>
+
+                <div class="project-image-container">
+                    <img src="assets/img/house.png" alt="This website" class="project-image">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-id">PRJ_005</span>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                    <h3 class="project-title">This website</h3>
+                    <p class="project-description">Live project, actively maintained.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/MS2104/sbz95.dev" class="project-link">
+                        VIEW_PROJECT
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="technical-readout readout-projects">
+            DISPLAYING: PROJECTS<br>
+            TOTAL_COUNT: 5<br>
+            STATUS: ACTIVE
+        </div>
+    </section>
 </body>
 </html>

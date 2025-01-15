@@ -3,78 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milad Sahar</title>
-    <link rel="stylesheet" href="/assets/about.css">
+    <title>Milad Sahar | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">PROJECTS</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li>MS</li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="https://linktr.ee/miladsahar">CONTACT</a></li>
-        </ul>
-    </nav>
-    
-    <div class="content">
-        <h1>About me</h1>
+    <div class="landing-container">
+        <!-- Grid corners -->
+        <div class="grid-corner top-left"></div>
+        <div class="grid-corner top-right"></div>
+        <div class="grid-corner bottom-left"></div>
+        <div class="grid-corner bottom-right"></div>
 
-        <h2 id="as-a-developer">As a developer</h2>
-        
-        <div class="devex"">
-            <div class="expshowcase">
-                <h3>Expertise:</h3>
-                <label for="experience">Unity</label>
-                <br>
-                <progress id="experience" value="75" max="100"></progress>
-                <br>
-                <label for="experience">C#</label>
-                <br>
-                <progress id="experience" value="75" max="100"></progress>
-                <br>
-                <label for="experience">Python</label>
-                <br>
-                <progress id="experience" value="35" max="100"></progress>
-                <br>
-                <label for="experience">HTML</label>
-                <br>
-                <progress id="experience" value="30" max="100"></progress>
-                <br>
-                <label for="experience">CSS</label>
-                <br>
-                <progress id="experience" value="30" max="100"></progress>
-                <br>
-                <label for="experience">JavaScript</label>
-                <br>
-                <progress id="experience" value="10" max="100"></progress>
-                <br>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><span class="nav-link">MS</span></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="https://linktr.ee/miladsahar" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-grid">
+            <!-- About Section Title -->
+            <div class="title-block">
+                <div class="geometric-accent accent-1"></div>
+                <h1 class="name">Milad Sahar</h1>
+                <h2 class="title">Game Developer</h2>
+                <div class="geometric-accent accent-2"></div>
             </div>
-            <div class="devabout">
-                <p>
-                    I specialize in C# and work alot with the Unity game engine. I’ve made numerous projects already in Unity and plan on making this my main engine to work with. I have also helped develop a VR game in Unreal Engine so I do know my way around that UE aswell. I also have a slight bit of experience with HTML & CSS. I’ve worked with JavaScript in the past as well but I have not created any projects in the language due to not being interested in it. I also have some experience with Python having built some terminal programs. I’m currently doing Game Developement in college and I’m scheduled to finish in 2026. During my time in college I’ve already developed agile skills and am able to work like real studios do. 
-                </p>
+
+            <!-- About Content -->
+            <div class="about-content">
+                <h2 class="section-title">As a Developer</h2>
+                <div class="devex">
+                    <div class="expshowcase">
+                        <h3>Expertise:</h3>
+                        <label for="experience">Unity</label><br>
+                        <progress id="experience" value="75" max="100"></progress><br>
+                        <label for="experience">C#</label><br>
+                        <progress id="experience" value="75" max="100"></progress><br>
+                        <label for="experience">Python</label><br>
+                        <progress id="experience" value="35" max="100"></progress><br>
+                        <label for="experience">HTML</label><br>
+                        <progress id="experience" value="30" max="100"></progress><br>
+                        <label for="experience">CSS</label><br>
+                        <progress id="experience" value="30" max="100"></progress><br>
+                        <label for="experience">JavaScript</label><br>
+                        <progress id="experience" value="10" max="100"></progress><br>
+                    </div>
+                    <div class="devabout">
+                        <p>
+                            I specialize in C# and work a lot with the Unity game engine. I’ve made numerous projects already in Unity and plan on making this my main engine to work with. I have also helped develop a VR game in Unreal Engine so I do know my way around that UE as well. I also have some experience with HTML & CSS, and have worked with JavaScript in the past, though I haven’t made any significant projects with it. I have also worked with Python to create terminal-based programs. Currently, I'm studying Game Development in college, with plans to graduate in 2026. I've gained agile skills and learned to work like a professional studio during my time in college.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cv-link">
+                    <a href="https://profile.indeed.com/p/milads-qtc6j6k">You can view my CV Here</a>
+                </div>
+
+                <h2 class="section-title">Who Am I Though?</h2>
+
+                <div class="image-text-container">
+                    <img src="/assets/img/selfie1.png" alt="That's me!" class="image-left">
+                    <p class="text-right">
+                        My name is Milad Sahar and I am 20 years old. Born in 2004 in the suburbs of Amsterdam to a migrant family freshly arrived from Afghanistan. Growing up, I loved games and always knew I wanted to make games in some way—whether indie or AAA. I’m very much a people person and love going out with my friends, whether it's for drinks or hiking. I also enjoy playing sandbox games like Minecraft and making amateur music with my friends. Music is always playing in the background—I'm a huge fan of R&B, rap, and metal, and I listen to artists like Frank Ocean, The Weeknd, Travis Scott, Bring Me The Horizon, and Sleep Token.
+                    </p>
+                </div>
+
+                <div class="cv">
+                    <h1>Would you like to work with me? Contact me.</h1>
+                </div>
             </div>
         </div>
 
-        <div class="cv-link">
-            <a href="https://profile.indeed.com/p/milads-qtc6j6k">You can view my CV Here</a> 
+        <div class="technical-readout readout-about">
+            DISPLAYING: ABOUT<br>
+            STATUS: ACTIVE<br>
+            LOCATION: GRID_7.9
         </div>
 
-        <h2 id="who-am-i-though">Who am I though?</h2>
-
-        <div class="image-text-container">
-            <img src="/assets/img/selfie1.png" alt="That's me!" class="image-left">
-            <p class="text-right">
-                My name is Milad Sahar and I am a 20 year old. I was born in 2004 in the suburbs of Amsterdam into a migrant family freshly arrived from Afghanistan. Growing up I loved games a lot and kinda knew from the start that when I grew up I was going to make games somehow, whether that be indie on the side or working on the next AAA game. I’m very much a people person, I love going out for drinks or just hiking as long as I’m out with my friends doing anything. I also put a lot of hours sandbox games like Minecraft and make amateur music with my friends. Whenever I’m doing anything I always have some music playing in the background. I usually listen to anything but I’m a big fan of R&amp;B, rap and I’m also a huge metalhead. I listen to artists like Frank Ocean, Brent Faiyaz, The Weeknd, Travis Scott, Bring Me The Horizon, Bad Omens and Sleep Token.
-            </p>
-        </div>
-
-        <div class="cv">
-            <h1>
-                Would you like to work with me? Contact me.
-            </h1>
-        </div>
+        <!-- Grid background -->
+        <div class="grid-overlay"></div>
     </div>
 </body>
 </html>
